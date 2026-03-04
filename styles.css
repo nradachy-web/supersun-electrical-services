@@ -1596,6 +1596,59 @@ details[open] .faq__question::after {
   color: var(--amber-400) !important;
 }
 
+.footer__hours {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5) !important;
+  transition: all 0.2s;
+}
+
+.footer__social-link:hover {
+  background: rgba(245,158,11,0.15);
+  border-color: rgba(245,158,11,0.25);
+  color: var(--amber-400) !important;
+}
+
+/* About page hero with background image */
+.page-hero[style*="background-image"] {
+  background-size: cover;
+  background-position: center;
+}
+
+.page-hero[style*="background-image"]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(2,6,23,0.85) 0%, rgba(15,23,42,0.75) 100%);
+  z-index: 0;
+}
+
+.page-hero[style*="background-image"] .container {
+  position: relative;
+  z-index: 1;
+}
+
 .footer__bottom {
   border-top: 1px solid rgba(255,255,255,0.06);
   padding-top: 24px;
